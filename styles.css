@@ -1,3 +1,4 @@
+/* إعادة تعيين بعض الأنماط الافتراضية */
 * {
     margin: 0;
     padding: 0;
@@ -6,137 +7,166 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a; /* خلفية داكنة لمظهر عصري */
+    color: #e0e0e0; /* لون نص فاتح لسهولة القراءة */
     line-height: 1.6;
-    color: #333;
 }
 
 header {
-    background-color: #444;
-    color: white;
-    padding: 10px 0;
+    background: linear-gradient(135deg, #333, #555); /* تدرج لوني داكن */
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* تأثير ظل خفيف */
 }
 
 header h1 {
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
+    padding: 0;
+    margin: 10px 0;
     display: flex;
     justify-content: center;
 }
 
-header nav ul li {
+nav ul li {
     margin: 0 15px;
 }
 
-header nav ul li a {
-    color: white;
+nav ul li a {
+    color: #e0e0e0; /* لون نص فاتح */
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    font-size: 1.2em;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-header nav ul li a:hover {
-    color: #f0a500;
+nav ul li a:hover {
+    color: #ff5722; /* لون تدرج برتقالي عند التمرير */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* تأثير ظل للنص */
+}
+
+section {
+    padding: 40px 20px;
+    background: #2a2a2a; /* خلفية داكنة */
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* تأثير ظل خفيف */
 }
 
 #hero {
-    background-image: url('hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: linear-gradient(135deg, #444, #666); /* تدرج خلفية داكنة */
+    color: #fff;
     text-align: center;
-    color: white;
-    padding: 20px;
+    padding: 60px 20px;
+    border-radius: 10px;
 }
 
 #hero h2 {
-    font-size: 3rem;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 #hero p {
-    font-size: 1.5rem;
-    margin: 20px 0;
-}
-
-#hero button {
-    background-color: #f0a500;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#hero button:hover {
-    background-color: #e09000;
-}
-
-.section {
-    padding: 60px 20px;
-    background-color: #f4f4f4;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.service-item {
-    background-color: white;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-input, textarea {
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    font-size: 1.2em;
 }
 
 button {
-    padding: 10px;
-    background-color: #444;
+    background-color: #ff5722; /* لون برتقالي */
     color: white;
     border: none;
-    font-size: 1.2rem;
+    padding: 15px 20px;
+    font-size: 1.1em;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 button:hover {
-    background-color: #333;
+    background-color: #e64a19; /* لون داكن عند التمرير */
+}
+
+.service-item {
+    background: #333; /* خلفية داكنة */
+    color: #e0e0e0; /* لون نص فاتح */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* تأثير ظل خفيف */
+}
+
+.service-item h3 {
+    color: #ff5722; /* لون برتقالي للعناوين */
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #333; /* خلفية داكنة للنموذج */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* تأثير ظل خفيف */
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #e0e0e0; /* لون نص فاتح */
+}
+
+form input, form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background: #222; /* خلفية إدخال داكنة */
+    color: #e0e0e0; /* لون نص فاتح */
+}
+
+form button {
+    background-color: #ff5722; /* لون برتقالي */
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e64a19; /* لون داكن عند التمرير */
 }
 
 footer {
-    background-color: #444;
-    color: white;
+    background: #000; /* خلفية سوداء */
+    color: #e0e0e0; /* لون نص فاتح */
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+#links ul li a {
+    color: aqua;
 }

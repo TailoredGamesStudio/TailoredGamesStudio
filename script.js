@@ -1,11 +1,3 @@
-// Scroll to specific section
-function scrollToSection(sectionId) {
-    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
-
-// Handle contact form submission
-document.getElementById('contact-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    alert('Thank you for your message!');
-    document.getElementById('contact-form').reset();
-});
